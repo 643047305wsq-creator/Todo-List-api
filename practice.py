@@ -9,7 +9,7 @@ def a():
     try:
         yield db
     finally:
-        db.close
+        db.close()
 Base.metadata.create_all(bind=engine)
 class Todocreate(BaseModel):
     title:str
