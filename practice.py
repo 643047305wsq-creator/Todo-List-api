@@ -4,27 +4,6 @@ from database import sessionlocal,engine,Base,Todo
 from sqlalchemy.orm import Session
 from typing import List
 app=FastAPI()
-# @app.get("/hello")
-# def a():
-#     return {"message":"你好"}
-# @app.get("/users/{user_id}")
-# def  b(user_id:int):
-#     return {"user_id":user_id}
-# @app.get("/search")
-# def c(keyword:str=None):
-#     if keyword==None:
-#         return {"result":"没有关键词"}
-#     else:
-#         return {"result":f"你搜索的是:{keyword}"}
-# class User(BaseModel):
-#     username:str
-#     age:int=18     
-# @app.post("/users/")
-# def d(user:User):
-#     return {"created_user":user}
-# @app.get("/init-db")
-# def init_db():
-#     return {"message":"数据库初始化成功"}
 def a():
     db=sessionlocal()
     try:
